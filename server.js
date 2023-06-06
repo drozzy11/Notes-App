@@ -1,11 +1,11 @@
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3001;
 const fs = require('fs');
 const path = require('path');
 
 const express = require('express');
 const app = express();
 
-const allNotes = require('./db/db.json');
+const allNotes = require('./db.json');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
